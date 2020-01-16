@@ -8,6 +8,12 @@ function App()
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
 
+  const reset = () =>
+  {
+    setStrikes(0);
+    setBalls(0);
+  }
+
   return (
     <div className="App">
       <h1>Baseball Scoreboard</h1>
@@ -22,8 +28,10 @@ function App()
         </div>
       <section className='buttons'>
         <div className='button'>
-          <button onClick={() => setStrikes(addStrikes)}>Add Strike</button>
+          <button onClick={() => setStrikes(addStrikes(strikes, false))}>Add Strike</button>
           <button onClick={() => setBalls(addBalls)}>Add Ball</button>
+          <button onClick={() => setStrikes(addStrikes(strikes, true))}>Foul Ball</button>
+          <button onClick={reset}>Reset</button>
         </div>
       </section>
      </section>
