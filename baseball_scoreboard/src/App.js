@@ -18,6 +18,12 @@ function App()
           <h3 className='ball-title'>Balls</h3>
           <div className='ball-value'>{balls}</div>
         </div>
+      <section className='buttons'>
+        <div className='button'>
+          <button>Add Strike</button>
+          <button>Add Ball</button>
+        </div>
+      </section>
      </section>
     </div>
   );
