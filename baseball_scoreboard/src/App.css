@@ -1,3 +1,24 @@
 .App {
   text-align: center;
 }
+
+.scoreboard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.strikes
+{
+  margin-right: 5%;
+}
+
+.buttons
+{
+  margin-top: 5%;
+}
+
+button
+{
+  margin-right: 2%;
+}

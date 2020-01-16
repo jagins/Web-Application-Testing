@@ -20,6 +20,7 @@ function App()
           <h3 className='ball-title'>Balls</h3>
           <div className='ball-value'>{balls}</div>
         </div>
+        </section>
       <section className='buttons'>
         <div className='button'>
           <button onClick={() => setStrikes(addStrikes(strikes, false))}>Add Strike</button>
@@ -28,7 +29,6 @@ function App()
           <button data-testid ='hit-button' onClick={() => {setStrikes(0); setBalls(0);}}>Hit</button>
         </div>
       </section>
-     </section>
     </div>
   );
 }
