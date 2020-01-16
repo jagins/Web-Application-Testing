@@ -25,7 +25,7 @@ function App()
           <button onClick={() => setStrikes(addStrikes(strikes, false))}>Add Strike</button>
           <button onClick={() => setBalls(addBalls)}>Add Ball</button>
           <button onClick={() => setStrikes(addStrikes(strikes, true))}>Foul Ball</button>
-          <button onClick={() => {setStrikes(0); setBalls(0);}}>Hit</button>
+          <button data-testid ='hit-button' onClick={() => {setStrikes(0); setBalls(0);}}>Hit</button>
         </div>
       </section>
      </section>
