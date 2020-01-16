@@ -8,12 +8,6 @@ function App()
   const [strikes, setStrikes] = useState(0);
   const [balls, setBalls] = useState(0);
 
-  const reset = () =>
-  {
-    setStrikes(0);
-    setBalls(0);
-  }
-
   return (
     <div className="App">
       <h1>Baseball Scoreboard</h1>
