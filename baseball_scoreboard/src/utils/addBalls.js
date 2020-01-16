@@ -1,6 +1,6 @@
 export const addBalls = balls =>
 {
-    if(balls >=4)
+    if(balls >=3)
         balls = 0;
     else
         balls++;

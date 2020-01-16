@@ -11,7 +11,7 @@ export const addStrikes = (strikes, foul) =>
    else
    {
        strikes++
-       if(strikes > 3)
+       if(strikes > 2)
        {
            strikes = 0;
        }
