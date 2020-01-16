@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {addStrikes} from './utils/addStrikes';
+import {addBalls} from './utils/addBalls';
 import './App.css';
 
 function App() 
@@ -20,8 +22,8 @@ function App()
         </div>
       <section className='buttons'>
         <div className='button'>
-          <button>Add Strike</button>
-          <button>Add Ball</button>
+          <button onClick={() => setStrikes(addStrikes)}>Add Strike</button>
+          <button onClick={() => setBalls(addBalls)}>Add Ball</button>
         </div>
       </section>
      </section>

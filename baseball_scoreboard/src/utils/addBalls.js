@@ -1,4 +1,4 @@
-const addBalls = balls =>
+export const addBalls = balls =>
 {
     if(balls >=4)
         balls = 0;

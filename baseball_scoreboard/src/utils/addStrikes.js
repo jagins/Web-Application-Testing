@@ -1,4 +1,4 @@
-const addStrikes = strikes =>
+export const addStrikes = strikes =>
 {
     if(strikes >= 3)
         strikes = 0;
